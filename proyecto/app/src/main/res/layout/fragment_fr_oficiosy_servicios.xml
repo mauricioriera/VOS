@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.serviciosparavos.vos.FrOficiosyServicios">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textonecesito"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="NECESITO"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textobusqueda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:text="Seleccione un
+        oficio que necesite"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/buscaoficio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnir"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/btnir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textobusqueda"
+            android:layout_marginTop="32dp"
+            android:text="IR" />
+
+        <TextView
+            android:id="@+id/relizaoficio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/buscaoficio"
+            android:layout_marginTop="69dp"
+            android:gravity="center"
+            android:text="¿Realiza un oficio?"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnsumate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relizaoficio"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:text="SUMATE" />
+    </RelativeLayout>
+
+</FrameLayout>
